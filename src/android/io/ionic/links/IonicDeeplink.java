@@ -75,6 +75,10 @@ public class IonicDeeplink extends CordovaPlugin {
 //      return;
 //    }
 
+    if(url == null) {
+      return;
+    }
+
     // store message and try to consume it
     try {
       lastEvent = new JSONObject();
